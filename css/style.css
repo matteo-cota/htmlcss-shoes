@@ -5,6 +5,10 @@ body {
     box-sizing: border-box;
 }
 
+html {
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
 
 h1 {
     font-size: 1.8rem;
@@ -45,11 +49,57 @@ h1 {
 }
 
 
-
 .page .content {
     position: absolute;
     top: 84%;
     left: 50%;
     text-align: end;
     translate: -50% -50%;
+}
+
+.page::before {
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+
+}
+
+.menù {
+    position: fixed;
+    right: 0;
+    top: 0;
+    translate: 0 50%;
+}
+
+.menù a {
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    text-shadow: 1px 1px 1px black;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.menù a:hover {
+    scale: 1.1;
+}
+
+.menù a:active {
+    scale: 1;
 }
