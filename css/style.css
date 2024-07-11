@@ -15,6 +15,12 @@ h1 {
     font-size: 1.8rem;
 }
 
+.img {
+    max-width: 100%;
+    position: absolute;
+    left: 20%;
+}
+
 .conteiner {
     max-width: 1000px;
     margin: 0 auto;
@@ -29,20 +35,17 @@ h1 {
 }
 
 #wall-red {
-    background-image: url(../img/01.png);
     background-color: red;
     color: rgb(246, 250, 7);
 }
 
 #wall-green {
-    background-image: url(../img/02.png);
     background-color: green;
     color: rgb(246, 250, 7);
 }
 
 
 #wall-yellow {
-    background-image: url(../img/03.png);
     background-color: yellow;
     color: green;
 }
